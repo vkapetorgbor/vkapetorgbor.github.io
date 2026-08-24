@@ -19,6 +19,9 @@ body{
   font-family: "Helvetica Neue", Arial, "Segoe UI", sans-serif;
   font-size: 16px;
   line-height: 1.7;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 a{ color: var(--link); text-decoration: none; }
@@ -83,6 +86,7 @@ body.home main{ padding-top: 0; }
 
 /* Main content */
 main{
+  flex: 1 0 auto;
   padding: 48px 0 80px;
 }
 
@@ -153,6 +157,7 @@ ol.pubs li .venue{ font-style: italic; }
 .note{ font-size: 13px; color: #9aa0a6; margin-top: 18px; }
 
 footer{
+  flex-shrink: 0;
   background: var(--burgundy);
   border-top: none;
   padding: 24px 0 30px;
